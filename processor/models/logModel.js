@@ -14,7 +14,7 @@ async function insertLogs(logs) {
                 log.timestamp,
                 log.level,
                 log.message,
-                log.app_name,
+                log.appName, // Map appName from collector to app_name in DB
                 log.meta
             ]);
         }
